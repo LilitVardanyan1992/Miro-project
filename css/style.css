@@ -8,6 +8,7 @@
 }
 
 nav .nav {
+  max-width: 1140px;
   min-height: 91px;
   display: flex;
   justify-content: space-between;
@@ -134,12 +135,19 @@ header .header .header__left .header__left-btns {
   margin-bottom: 8px;
   gap: 10px;
 }
-header .header .header__left .header__left-btns .header__left-btns-2 {
-  padding: 16.8px 151.7px;
-  color: #FFFFFF;
-  text-decoration: none;
+header .header .header__left .header__left-btns .header__left-btns-a {
+  width: 440px;
+  height: 48px;
+  text-align: center;
+  padding-top: 10px;
+  display: block;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
   background: #4262FF;
+  color: #FFFFFF;
   border-radius: 32px;
+  text-decoration: none;
 }
 header .header .header__left .header__left-about {
   font-size: 14px;
@@ -148,12 +156,17 @@ header .header .header__left .header__left-about {
 }
 header .header .header__left .header__left-icons {
   display: flex;
-  gap: 27px;
+  gap: 20px;
   align-items: center;
 }
-header .header .header__left .header__left-icons:nth-child(1) {
+header .header .header__left .header__left-icons p {
   font-size: 18px;
-  line-height: 24px;
+}
+@media screen and (max-width: 480px) {
+  header .header .header__left .header__left-icons p {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 @media screen and (max-width: 1180px) {
   header .header {
@@ -168,18 +181,46 @@ header .header .header__left .header__left-icons:nth-child(1) {
   header .header {
     margin-top: 40px;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
   }
   header .header .header__left {
+    align-items: center;
+    justify-content: center;
     text-align: center;
+  }
+  header .header .header__left .header__left-desc {
+    margin-bottom: 24px;
   }
 }
 @media screen and (max-width: 580px) {
   header .header .header__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
   }
-  header .header .header__left a svg {
-    max-width: 380px;
+  header .header .header__left h1 {
+    font-size: 40px;
+    margin-bottom: 0px;
+  }
+  header .header .header__left .header__left-desc {
+    margin-bottom: 18px;
+  }
+  header .header .header__left .header__left-icons {
+    gap: 8px;
+  }
+  header .header .header__left .header__left-btns .header__left-btns-1 {
+    margin-bottom: 0px;
+  }
+  header .header .header__left .header__left-btns .header__left-btns-1 svg {
+    width: 100%;
+    min-height: 48px;
+  }
+  header .header .header__left .header__left-btns .header__left-btns-a {
+    width: 100%;
+    margin: 0 auto;
   }
 }
 

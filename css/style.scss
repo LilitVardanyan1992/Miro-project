@@ -6,6 +6,7 @@ $tablet: 1024px;
 $mobileL: 768px;
 $mobileM: 580px;
 $mobileS: 480px;
+$mobileXS: 320px;
 
 @font-face {
     font-family: "Roboto";
@@ -19,6 +20,7 @@ $mobileS: 480px;
 
 nav {
     .nav {
+        max-width: 1140px;
         min-height: 91px;
         display: flex;
         justify-content: space-between;
@@ -196,12 +198,19 @@ header {
                 margin-bottom: 8px;
                 gap: 10px;
 
-                .header__left-btns-2 {
-                    padding: 16.8px 151.7px;
-                    color: $colorWhite;
-                    text-decoration: none;
+                .header__left-btns-a {
+                    width: 440px;
+                    height: 48px;
+                    text-align: center;
+                    padding-top: 10px;
+                    display: block;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 27px;
                     background: $colorBlue;
+                    color: $colorWhite;
                     border-radius: 32px;
+                    text-decoration: none;
                 }
             }
 
@@ -213,17 +222,18 @@ header {
 
             .header__left-icons {
                 display: flex;
-                gap: 27px;
+                gap: 20px;
                 align-items: center;
-
-                &:nth-child(1) {
+                p {
                     font-size: 18px;
-                    line-height: 24px;
+                    @media screen and (max-width: $mobileS) {
+                        font-size: 14px;
+                        line-height: 18px;
+                    }
+                    
                 }
             }
         }
-
-        .header__right {}
 
         @media screen and (max-width: 1180px) {
             margin-top: 50px;
@@ -242,20 +252,51 @@ header {
         @media screen and (max-width: $tablet) {
             margin-top: 40px;
             flex-wrap: wrap;
+            align-items: center;
             justify-content: center;
 
             .header__left {
+                align-items: center;
+                justify-content: center;
                 text-align: center;
+
+                .header__left-desc {
+                    margin-bottom: 24px;
+                }
             }
         }
 
+
+
         @media screen and (max-width: $mobileM) {
             .header__left {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
                 width: 100%;
+                h1 {
+                    font-size: 40px;
+                    margin-bottom: 0px;
+                }
+                .header__left-desc {
+                    margin-bottom: 18px;
+                }
+                .header__left-icons {
+                    gap: 8px;
+                }
+                .header__left-btns {
+                    .header__left-btns-1 {
+                        margin-bottom: 0px;
 
-                a {
-                    svg {
-                        max-width: 380px;
+                        svg {
+                            width: 100%;
+                            min-height: 48px;
+                        }
+                    }
+                    .header__left-btns-a {
+                        width: 100%;
+                        margin: 0 auto;
                     }
                 }
             }
