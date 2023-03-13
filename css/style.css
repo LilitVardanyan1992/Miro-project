@@ -1,9 +1,17 @@
+main .main .main__left .main__left-title, header .header .header__left h1 {
+  font-size: 48px;
+  letter-spacing: 1px;
+  line-height: 56px;
+  font-weight: 400;
+  color: #050038;
+}
+
 @font-face {
   font-family: "Roboto";
   src: url(../fonts/Roboto-Regular.ttf);
 }
 .container {
-  max-width: 1120px;
+  max-width: 1140px;
   margin: 0 auto;
 }
 
@@ -113,11 +121,9 @@ header .header {
   align-items: flex-start;
   gap: 81px;
   margin-top: 83px;
+  margin-bottom: 120px;
 }
 header .header .header__left h1 {
-  font-weight: 400;
-  font-size: 48px;
-  letter-spacing: 1px;
   margin-top: 0;
   margin-bottom: 19px;
 }
@@ -127,6 +133,11 @@ header .header .header__left .header__left-desc {
   font-size: 18px;
   line-height: 24px;
   margin-bottom: 55px;
+}
+@media screen and (max-width: 320px) {
+  header .header .header__left .header__left-desc {
+    font-size: 14px;
+  }
 }
 header .header .header__left .header__left-btns {
   display: flex;
@@ -183,6 +194,7 @@ header .header .header__left .header__left-icons p {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    margin-bottom: 0px;
   }
   header .header .header__left {
     align-items: center;
@@ -192,8 +204,14 @@ header .header .header__left .header__left-icons p {
   header .header .header__left .header__left-desc {
     margin-bottom: 24px;
   }
+  header .header .header__left .header__left-about {
+    margin-bottom: 24px;
+  }
 }
 @media screen and (max-width: 580px) {
+  header .header {
+    gap: 20px;
+  }
   header .header .header__left {
     display: flex;
     flex-direction: column;
@@ -202,7 +220,8 @@ header .header .header__left .header__left-icons p {
     width: 100%;
   }
   header .header .header__left h1 {
-    font-size: 40px;
+    font-size: 32px;
+    line-height: 40px;
     margin-bottom: 0px;
   }
   header .header .header__left .header__left-desc {
@@ -221,6 +240,72 @@ header .header .header__left .header__left-icons p {
   header .header .header__left .header__left-btns .header__left-btns-a {
     width: 100%;
     margin: 0 auto;
+  }
+  header .header .header__left .header__left-about {
+    margin-bottom: 14px;
+  }
+}
+
+main .main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 116px;
+  padding: 0 20px;
+  color: #050038;
+}
+main .main .main__left {
+  padding-top: 35px;
+  max-width: 454px;
+}
+main .main .main__left .main__left-title {
+  margin-bottom: 19px;
+}
+main .main .main__left .main__left-desc {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(5, 0, 56, 0.6);
+  margin-bottom: 39px;
+}
+@media screen and (max-width: 320px) {
+  main .main .main__left .main__left-desc {
+    font-size: 14px;
+  }
+}
+main .main .main__left a {
+  color: #4262FF;
+  border-bottom: 1px solid #4262FF;
+  text-decoration: none;
+}
+@media screen and (max-width: 1180px) {
+  main .main {
+    margin-top: 50px;
+    gap: 2px;
+  }
+  main .main .main__right .main__right-img img {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  main .main {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+main .main .main__left {
+  text-align: center;
+  margin-top: 0;
+}
+@media screen and (max-width: 580px) {
+  main .main .main__left .main__left-title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  main .main .main__left .main__left-desc {
+    margin-bottom: 18px;
   }
 }
 
