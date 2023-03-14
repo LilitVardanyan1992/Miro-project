@@ -2,19 +2,19 @@ $primary: #050038;
 $colorWhite: #FFFFFF;
 $colorBlue: #4262FF;
 
-%titleSection {
-    font-size: 48px;
-    letter-spacing: 1px;
-    line-height: 56px;
-    font-weight: 400;
-    color: $primary;
-}
-
 $tablet: 1024px;
 $mobileL: 768px;
 $mobileM: 580px;
 $mobileS: 480px;
 $mobileXS: 320px;
+
+%titleSection {
+    font-size: min(48px, max(24px + 2vw));
+    letter-spacing: 1px;
+    line-height: 56px;
+    font-weight: 400;
+    color: $primary;
+}
 
 @font-face {
     font-family: "Roboto";
@@ -34,13 +34,10 @@ nav {
         justify-content: space-between;
         color: $primary;
         padding-top: 20px;
-
         .nav__items-1 {
             display: flex;
             justify-content: space-between;
             gap: 24px;
-
-            .logo {}
 
             .nav__menu {
                 display: flex;
@@ -48,7 +45,6 @@ nav {
                 justify-content: space-between;
                 list-style-type: none;
                 padding-left: 0px;
-
                 a {
                     text-decoration: none;
                     color: $primary;
@@ -66,14 +62,12 @@ nav {
                 align-items: center;
                 justify-content: space-between;
                 gap: 88px;
-
                 button {
                     padding: 17px 26px;
                     background: $colorBlue;
                     border: none;
                     border-radius: 24px;
                     cursor: pointer;
-
                     .login {
                         display: none;
                     }
@@ -85,7 +79,6 @@ nav {
 
                 .burger__menu {
                     display: none;
-
                 }
             }
         }
@@ -100,7 +93,6 @@ nav {
             .nav__items-2 {
                 button {
                     margin-right: 20px;
-
                 }
             }
         }
@@ -121,14 +113,12 @@ nav {
             .nav__items-2 {
                 .nav__btns {
                     gap: 44px;
-
                     .nav__btns-icon {
                         padding-left: 30px;
                     }
 
                     button {
                         background: transparent;
-
                         .login {
                             display: block;
                         }
@@ -162,7 +152,6 @@ nav {
             .nav__items-2 {
                 .nav__btns {
                     gap: 16px;
-
                     .nav__btns-icon {
                         padding-left: 0;
                     }
@@ -182,7 +171,6 @@ header {
         gap: 81px;
         margin-top: 83px;
         margin-bottom: 120px;
-
         .header__left {
             h1 {
                 @extend %titleSection;
@@ -196,6 +184,7 @@ header {
                 font-size: 18px;
                 line-height: 24px;
                 margin-bottom: 55px;
+
                 @media screen and (max-width: $mobileXS) {
                     font-size: 14px;
                 }
@@ -207,7 +196,6 @@ header {
                 align-items: flex-start;
                 margin-bottom: 8px;
                 gap: 10px;
-
                 .header__left-btns-a {
                     width: 440px;
                     height: 48px;
@@ -236,11 +224,11 @@ header {
                 align-items: center;
                 p {
                     font-size: 18px;
+
                     @media screen and (max-width: $mobileS) {
                         font-size: 14px;
                         line-height: 18px;
                     }
-                    
                 }
             }
         }
@@ -248,7 +236,6 @@ header {
         @media screen and (max-width: 1180px) {
             margin-top: 50px;
             gap: 40px;
-
             .header__right {
                 .header__right-img {
                     img {
@@ -264,22 +251,19 @@ header {
             align-items: center;
             justify-content: center;
             margin-bottom: 0px;
-
             .header__left {
                 align-items: center;
                 justify-content: center;
                 text-align: center;
-
                 .header__left-desc {
                     margin-bottom: 24px;
                 }
+
                 .header__left-about {
                     margin-bottom: 24px;
                 }
             }
         }
-
-
 
         @media screen and (max-width: $mobileM) {
             gap: 20px;
@@ -289,30 +273,30 @@ header {
                 align-items: center;
                 justify-content: center;
                 width: 100%;
-                h1 {
-                    font-size: 32px;
-                    line-height: 40px;
-                    margin-bottom: 0px;
-                }
+
                 .header__left-desc {
                     margin-bottom: 18px;
                 }
+
                 .header__left-icons {
                     gap: 8px;
                 }
+
                 .header__left-btns {
                     .header__left-btns-1 {
                         margin-bottom: 0px;
+
                         svg {
                             width: 100%;
-                            min-height: 48px ; 
                         }
                     }
+
                     .header__left-btns-a {
                         width: 100%;
                         margin: 0 auto;
                     }
                 }
+
                 .header__left-about {
                     margin-bottom: 14px;
                 }
@@ -323,48 +307,40 @@ header {
 
 main {
     .main {
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-        gap: 116px;
-        padding: 0 20px;
-        color: $primary;
-        .main__left {
-            padding-top: 35px;
-            max-width: 454px;
-            .main__left-title {
-                @extend %titleSection;
-                margin-bottom: 19px;
-            }
-            .main__left-desc {
-                font-weight: 400;
-                font-size: 18px;
-                line-height: 24px;
-                color: #05003899;
-                margin-bottom: 39px;
-                @media screen and (max-width: $mobileXS) {
-                    font-size: 14px;
+        .main__first {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 116px;
+            padding: 0 20px;
+            color: $primary;
+            .main__left {
+                padding-top: 35px;
+                max-width: 454px;
+
+                .main__left-title {
+                    @extend %titleSection;
+                    margin-bottom: 19px;
+                }
+
+                .main__left-desc {
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 24px;
+                    color: #05003899;
+                    margin-bottom: 39px;
+
+                    @media screen and (max-width: $mobileXS) {
+                        font-size: 14px;
+                    }
+                }
+
+                a {
+                    color: $colorBlue;
+                    border-bottom: 1px solid $colorBlue;
+                    text-decoration: none;
                 }
             }
-            a {
-                color: $colorBlue;
-                border-bottom: 1px solid $colorBlue;
-                text-decoration: none;
-
-            }
-
-        }
-        .main-right {
-            .main__right-img {
-                img {
-
-                }
-            }
-        }
-        
-        @media screen and (max-width: 1180px) {
-            margin-top: 50px;
-            gap: 2px;
 
             .main__right {
                 .main__right-img {
@@ -373,25 +349,88 @@ main {
                     }
                 }
             }
-        }
-        @media screen and (max-width: $tablet) {
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        margin-top: 20px;
-        }
-        .main__left {
-            text-align: center;
-            margin-top: 0;
-        }
-        @media screen and (max-width: $mobileM){
-            .main__left {
-                .main__left-title {
-                    font-size: 32px;
-                    line-height: 40px;
+
+            @media screen and (max-width: $tablet) {
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                margin-top: 20px;
+                gap: 0px;
+                .main__left {
+                    text-align: center;
+                    margin-top: 0;
                 }
-                .main__left-desc {
-                    margin-bottom: 18px;
+            }
+
+            
+
+            @media screen and (max-width: $mobileM) {
+                .main__left {
+                    .main__left-title {
+                        font-size: 32px;
+                        line-height: 40px;
+                    }
+
+                    .main__left-desc {
+                        margin-bottom: 18px;
+                    }
+                }
+            }
+        }
+
+        .main__second {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 116px;
+            padding: 0 20px;
+            color: $primary;
+            .main__left-second {
+                .main__left-img {
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .main__right-second {
+                max-width: 454px;
+               h2 {
+                @extend %titleSection;
+                margin-bottom: 19px;
+               }
+            }
+
+            .main__right-desc {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 24px;
+                color: #05003899;
+                margin-bottom: 39px;
+
+                @media screen and (max-width: $mobileXS) {
+                    font-size: 14px;
+                }
+            }
+
+            a {
+                color: $colorBlue;
+                border-bottom: 1px solid $colorBlue;
+                text-decoration: none;
+            }
+
+            @media screen and (max-width: $tablet) {
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                margin-top: 20px;
+                gap: 0px;
+                .main__right-second {
+                    text-align: center;
+                    margin-top: 0;
+                    h2 {
+                        margin-top: 0;
+                    }
                 }
             }
         }

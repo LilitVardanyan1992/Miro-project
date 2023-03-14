@@ -1,5 +1,5 @@
-main .main .main__left .main__left-title, header .header .header__left h1 {
-  font-size: 48px;
+main .main .main__second .main__right-second h2, main .main .main__first .main__left .main__left-title, header .header .header__left h1 {
+  font-size: min(48px, max(24px + 2vw));
   letter-spacing: 1px;
   line-height: 56px;
   font-weight: 400;
@@ -219,11 +219,6 @@ header .header .header__left .header__left-icons p {
     justify-content: center;
     width: 100%;
   }
-  header .header .header__left h1 {
-    font-size: 32px;
-    line-height: 40px;
-    margin-bottom: 0px;
-  }
   header .header .header__left .header__left-desc {
     margin-bottom: 18px;
   }
@@ -235,7 +230,6 @@ header .header .header__left .header__left-icons p {
   }
   header .header .header__left .header__left-btns .header__left-btns-1 svg {
     width: 100%;
-    min-height: 48px;
   }
   header .header .header__left .header__left-btns .header__left-btns-a {
     width: 100%;
@@ -246,7 +240,7 @@ header .header .header__left .header__left-icons p {
   }
 }
 
-main .main {
+main .main .main__first {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -254,14 +248,14 @@ main .main {
   padding: 0 20px;
   color: #050038;
 }
-main .main .main__left {
+main .main .main__first .main__left {
   padding-top: 35px;
   max-width: 454px;
 }
-main .main .main__left .main__left-title {
+main .main .main__first .main__left .main__left-title {
   margin-bottom: 19px;
 }
-main .main .main__left .main__left-desc {
+main .main .main__first .main__left .main__left-desc {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -269,43 +263,88 @@ main .main .main__left .main__left-desc {
   margin-bottom: 39px;
 }
 @media screen and (max-width: 320px) {
-  main .main .main__left .main__left-desc {
+  main .main .main__first .main__left .main__left-desc {
     font-size: 14px;
   }
 }
-main .main .main__left a {
+main .main .main__first .main__left a {
   color: #4262FF;
   border-bottom: 1px solid #4262FF;
   text-decoration: none;
 }
-@media screen and (max-width: 1180px) {
-  main .main {
-    margin-top: 50px;
-    gap: 2px;
-  }
-  main .main .main__right .main__right-img img {
-    max-width: 100%;
-  }
+main .main .main__first .main__right .main__right-img img {
+  max-width: 100%;
 }
 @media screen and (max-width: 1024px) {
-  main .main {
+  main .main .main__first {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     margin-top: 20px;
+    gap: 0px;
+  }
+  main .main .main__first .main__left {
+    text-align: center;
+    margin-top: 0;
   }
 }
-main .main .main__left {
-  text-align: center;
-  margin-top: 0;
-}
 @media screen and (max-width: 580px) {
-  main .main .main__left .main__left-title {
+  main .main .main__first .main__left .main__left-title {
     font-size: 32px;
     line-height: 40px;
   }
-  main .main .main__left .main__left-desc {
+  main .main .main__first .main__left .main__left-desc {
     margin-bottom: 18px;
+  }
+}
+main .main .main__second {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 116px;
+  padding: 0 20px;
+  color: #050038;
+}
+main .main .main__second .main__left-second .main__left-img img {
+  width: 100%;
+}
+main .main .main__second .main__right-second {
+  max-width: 454px;
+}
+main .main .main__second .main__right-second h2 {
+  margin-bottom: 19px;
+}
+main .main .main__second .main__right-desc {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(5, 0, 56, 0.6);
+  margin-bottom: 39px;
+}
+@media screen and (max-width: 320px) {
+  main .main .main__second .main__right-desc {
+    font-size: 14px;
+  }
+}
+main .main .main__second a {
+  color: #4262FF;
+  border-bottom: 1px solid #4262FF;
+  text-decoration: none;
+}
+@media screen and (max-width: 1024px) {
+  main .main .main__second {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 0px;
+  }
+  main .main .main__second .main__right-second {
+    text-align: center;
+    margin-top: 0;
+  }
+  main .main .main__second .main__right-second h2 {
+    margin-top: 0;
   }
 }
 
