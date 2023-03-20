@@ -1,4 +1,4 @@
-main .main .main__forth .main__forth-block h2, main .main .main__third .main__third-block h2, main .main .main__second .main__right-second h2, main .main .main__first .main__left .main__left-title, header .header .header__left h1 {
+main .main .like__companies h2, main .main .miro__companies h2, main .main .main__forth .main__forth-block h2, main .main .main__third .main__third-block h2, main .main .main__second .main__right-second h2, main .main .main__first .main__left .main__left-title, header .header .header__left h1 {
   font-size: min(48px, max(24px + 2vw));
   letter-spacing: 1px;
   line-height: 56px;
@@ -395,9 +395,13 @@ main .main .main__third .main__third-block .main__third-nav .main__third-nav-men
 main .main .main__third .main__third-block .main__third-learnmore {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   gap: 56px;
   padding: 0px 20px;
+  margin-top: 70px;
+}
+main .main .main__third .main__third-block .main__third-learnmore .main__third-learnmore-left {
+  max-width: 288px;
 }
 main .main .main__third .main__third-block .main__third-learnmore .main__third-learnmore-left h6, main .main .main__third .main__third-block .main__third-learnmore .main__third-learnmore-left p {
   font-weight: 400;
@@ -409,6 +413,9 @@ main .main .main__third .main__third-block .main__third-learnmore .main__third-l
   main .main .main__third .main__third-block .main__third-learnmore .main__third-learnmore-left h6, main .main .main__third .main__third-block .main__third-learnmore .main__third-learnmore-left p {
     font-size: 14px;
   }
+}
+main .main .main__third .main__third-block .main__third-learnmore .main__third-learnmore-left h6 {
+  margin: 0px 0px 25px 0px;
 }
 main .main .main__third .main__third-block .main__third-learnmore .main__third-learnmore-left a {
   text-decoration: none;
@@ -423,12 +430,19 @@ main .main .main__third .main__third-block .main__third-learnmore .main__third-l
 @media screen and (max-width: 890px) {
   main .main .main__third .main__third-block .main__third-learnmore {
     flex-wrap: wrap;
+    gap: 24px;
   }
   main .main .main__third .main__third-block .main__third-learnmore .main__third-learnmore-left {
     text-align: center;
+    margin: 0px auto;
   }
   main .main .main__third .main__third-block .main__third-learnmore .main__third-learnmore-right {
     margin: 0 auto;
+  }
+}
+@media screen and (max-width: 890px) {
+  main .main .main__third .main__third-block {
+    margin-top: 64px;
   }
 }
 main .main .main__forth .main__forth-block {
@@ -475,12 +489,10 @@ main .main .main__forth .main__forth-block .main__forth-nav .main__forth-nav-men
 main .main .main__forth .main__forth-block .main__forth-learnmore {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   gap: 56px;
   padding: 0px 20px;
-}
-main .main .main__forth .main__forth-block .main__forth-learnmore .main__forth-learnmore-left {
-  width: 100%;
+  margin-top: 70px;
 }
 main .main .main__forth .main__forth-block .main__forth-learnmore .main__forth-learnmore-left h6, main .main .main__forth .main__forth-block .main__forth-learnmore .main__forth-learnmore-left p {
   font-weight: 400;
@@ -526,12 +538,181 @@ main .main .main__forth .main__forth-block .main__forth-learnmore .main__forth-l
 @media screen and (max-width: 890px) {
   main .main .main__forth .main__forth-block .main__forth-learnmore {
     flex-wrap: wrap;
+    gap: 24px;
   }
   main .main .main__forth .main__forth-block .main__forth-learnmore .main__forth-learnmore-left {
     text-align: center;
+    margin: 0px auto;
+  }
+  main .main .main__forth .main__forth-block .main__forth-learnmore .main__forth-learnmore-left a {
+    margin-bottom: 24px;
   }
   main .main .main__forth .main__forth-block .main__forth-learnmore .main__forth-learnmore-right {
     margin: 0 auto;
+  }
+}
+@media screen and (max-width: 890px) {
+  main .main .main__forth .main__forth-block {
+    margin-top: 64px;
+  }
+}
+main .main .miro__companies {
+  margin-top: 150px;
+  max-width: 1200px;
+  min-height: 1027px;
+  padding: 120px 32px;
+  background: #FFD02F;
+}
+main .main .miro__companies h2 {
+  max-width: 525px;
+  margin: 0px auto;
+  text-align: center;
+}
+main .main .miro__companies a {
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #050038;
+  text-decoration: none;
+  border-bottom: 1px solid #050038;
+  margin: 18px auto 135px auto;
+}
+main .main .miro__companies .miro__companies-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+main .main .miro__companies .miro__companies-items .miro__companies-item {
+  width: 30%;
+}
+main .main .miro__companies .miro__companies-items .miro__companies-item h5 {
+  text-align: center;
+}
+main .main .miro__companies .miro__companies-items .miro__companies-item p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #050038;
+}
+main .main .miro__companies .miro__companies-items .miro__companies-item:nth-child(1) {
+  margin-bottom: 120px;
+}
+@media screen and (max-width: 860px) {
+  main .main .miro__companies .miro__companies-items .miro__companies-item {
+    width: 45%;
+  }
+  main .main .miro__companies .miro__companies-items .miro__companies-item:nth-child(1) {
+    margin-bottom: 0px;
+  }
+}
+@media screen and (max-width: 580px) {
+  main .main .miro__companies .miro__companies-items .miro__companies-item {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 860px) {
+  main .main .miro__companies {
+    margin-top: 64px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  main .main .miro__companies a {
+    margin-bottom: 64px;
+    font-size: 16px;
+  }
+}
+main .main .like__companies {
+  margin-top: 120px;
+}
+main .main .like__companies h2 {
+  margin: 0px auto;
+  text-align: center;
+}
+main .main .like__companies .like__companies-about {
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #4262FF;
+  text-decoration: none;
+  border: 1px solid #4262FF;
+  border-radius: 24px;
+  padding: 10px 32px;
+  margin: 24px auto 120px auto;
+}
+main .main .like__companies .like__companies-items {
+  display: flex;
+  gap: 60px;
+}
+main .main .like__companies .like__companies-items .like__companies-item {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding: 16px;
+}
+main .main .like__companies .like__companies-items .like__companies-item .like__companies-item-icon {
+  margin-bottom: 24px;
+}
+main .main .like__companies .like__companies-items .like__companies-item p {
+  color: rgba(5, 0, 56, 0.6);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  flex: 1 1 auto;
+}
+main .main .like__companies .like__companies-items .like__companies-item .like__companies-item-person {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+main .main .like__companies .like__companies-items .like__companies-item .like__companies-item-person .like__companies-item-person-about p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(5, 0, 56, 0.6);
+}
+@media screen and (max-width: 1024px) {
+  main .main .like__companies .like__companies-items {
+    flex-wrap: wrap;
+  }
+  main .main .like__companies .like__companies-items .like__companies-item {
+    width: 45%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  main .main .like__companies .like__companies-items .like__companies-item .like__companies-item-icon {
+    padding-left: 90px;
+  }
+  main .main .like__companies .like__companies-items .like__companies-item:nth-child(3) {
+    margin: 0px auto;
+  }
+  main .main .like__companies .like__companies-items .like__companies-item:nth-child(3) .like__companies-item-icon {
+    padding-left: 200px;
+  }
+}
+@media screen and (max-width: 890px) {
+  main .main .like__companies {
+    margin-top: 64px;
+  }
+  main .main .like__companies .like__companies-about {
+    margin-bottom: 64px;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .main .like__companies .like__companies-items {
+    gap: 24px;
+  }
+  main .main .like__companies .like__companies-items .like__companies-item {
+    width: 100%;
   }
 }
 
