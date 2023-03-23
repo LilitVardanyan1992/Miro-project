@@ -89,7 +89,7 @@ nav .nav .nav__items-2 .nav__btns .burger__menu {
     gap: 22px;
   }
   nav .nav .nav__items-2 .nav__btns {
-    gap: 44px;
+    gap: 24px;
   }
   nav .nav .nav__items-2 .nav__btns .nav__btns-icon {
     padding-left: 20px;
@@ -118,7 +118,10 @@ nav .nav .nav__items-2 .nav__btns .burger__menu {
     gap: 16px;
   }
   nav .nav .nav__items-2 .nav__btns .nav__btns-icon {
-    padding-left: 0;
+    padding-left: 5px;
+  }
+  nav .nav .nav__items-2 .nav__btns button {
+    padding: 17px 10px;
   }
 }
 
@@ -235,6 +238,7 @@ header .header .header__left .header__left-icons p {
     margin-bottom: 18px;
   }
   header .header .header__left .header__left-icons {
+    flex-wrap: wrap;
     gap: 8px;
   }
   header .header .header__left .header__left-btns .header__left-btns-1 {
@@ -532,6 +536,11 @@ main .main .main__forth .main__forth-block .main__forth-learnmore .main__forth-l
 main .main .main__forth .main__forth-block .main__forth-learnmore .main__forth-learnmore-left h6:nth-child(3), main .main .main__forth .main__forth-block .main__forth-learnmore .main__forth-learnmore-left p:nth-child(3) {
   margin-bottom: 30px;
 }
+@media screen and (max-width: 580px) {
+  main .main .main__forth .main__forth-block .main__forth-learnmore .main__forth-learnmore-left h6, main .main .main__forth .main__forth-block .main__forth-learnmore .main__forth-learnmore-left p {
+    padding-left: 0px;
+  }
+}
 @media screen and (max-width: 320px) {
   main .main .main__forth .main__forth-block .main__forth-learnmore .main__forth-learnmore-left h6, main .main .main__forth .main__forth-block .main__forth-learnmore .main__forth-learnmore-left p {
     font-size: 14px;
@@ -656,6 +665,7 @@ main .main .miro__companies .miro__companies-items .miro__companies-item:nth-chi
 main .main .like__companies {
   margin-top: 120px;
   margin-bottom: 120px;
+  padding: 0px 20px;
 }
 main .main .like__companies h2 {
   margin: 0px auto;
